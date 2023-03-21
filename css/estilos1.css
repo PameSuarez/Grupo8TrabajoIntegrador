@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    
+}
+
+form{
+    width: 450px;
+    max-width: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    
+}
+
+legend{
+    color:white;
+    font-style: italic;
+    margin: 0;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+input , textarea {
+width: 100% ;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 20px;
+border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+  background:rgb(38, 38, 62)  ;
+  color: white;
+  padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%
+    ;
+    }
+}

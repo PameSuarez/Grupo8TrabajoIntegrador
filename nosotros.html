@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css\estilonosotros.css" />
+    <link rel="stylesheet" type="text/css" href="css\index.css" />
+    <title>Grupo 8 - Software</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg"
+        data-bs-theme="dark"
+        style="background-color: #073331; color: #01eee4"
+      >
+        <div class="container-fluid">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="logo-wrap" href="index.html">
+              <img
+                class="logo-img logo-img-main"
+                src="img/logonav.png"
+                alt="Grupo 8 Logo"
+              />
+            </a>
+          </div>
+          <!-- End Logo -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar-nav justify-content-end"
+            id="navbarNav"
+            style="color: #01eee4"
+          >
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactForm.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <!--========== END HEADER ==========-->
+    <!-- Contenedor principal de Nosotros -->
+    <div id="contenedor-nosotros-1" class="container">
+      <!-- Primer fila -->
+      <div id="fila1" class="fila">
+        <!-- Primera columna -->
+        <div class="columna">
+          <h1>Code Solutions</h1>
+          <p>
+            Somos una empresa fundada en 2023 con el objetivo de llevar a cabo
+            soluciones web a empresas.<br />
+            Queremos ayudarte a alcanzar el éxito de tus proyectos, negocios e
+            ideas de la mano del desarrollo web. Aportando nuestra filosofia de
+            trabajo: cercanía, transparencia, confianza y profesinalismo, con el
+            único objetivo que tu negocio tenga éxito. <br />
+            Buscamos ofrecer una solucion concreta a cada empresa, ya que cada
+            negocio es diferente. Por eso, esuchamos primero, analizamos luego,
+            y por último actuamos buscando siempre la mejor opción para el
+            cliente. <br />
+            Porque si vos ganas, nosotros ganamos.
+          </p>
+        </div>
+        <!-- Segunda columna -->
+        <div class="columna">
+          <img id="imagen_nosotros" src="img/imagen-nosotros.jpg" />
+        </div>
+      </div>
+      <!-- Título del equipo de programadores -->
+      <h2 id="equipo-programadores">Equipo de programadores</h2>
+      <!-- Segunda fila -->
+      <div id="contenedor-equipo" class="container">
+        <!-- Primera columna -->
+        <div id="fila2" class="fila">
+          <!-- seccion botones programadores -->
+          <div id="equipo" class="columna">
+            <div id="botonivan" class="botonDescripcion">
+              <button onclick="mostrarTexto()">
+                <img
+                  id="fotoivan"
+                  class="fotoProgramador"
+                  src="img/ivanfibiger.jpg"
+                  alt="ivanfibiger"
+                  width="120"
+                />
+              </button>
+              <div id="texto" style="display: none">
+                <h3 id="ivan" class="nombreprogramador">Ivan Fibiger</h3>
+                <p>
+                  Técnico electrónico, técnico universitario en tecnologías de
+                  programación. Apasionado de la tecnología, comencé a
+                  experimentar con computadoras entrando en la adolescencia.
+                  Tuve mi propio taller de reparación de PC y móviles y
+                  actualmente me encuentro finalizando la tecnicatura en
+                  programación.
+                </p>
+                <p>
+                  Linkedin:
+                  <a
+                    href="https://www.linkedin.com/in/ivan-fibiger/"
+                    target="_blank"
+                    >ivan-fibiger</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div id="botonprogramador2" class="botonDescripcion">
+              <button onclick="mostrarTexto2()">
+                <img
+                  id="fotoprogramador1"
+                  class="fotoProgramador"
+                  src="img/otroprogramador.jpg"
+                  alt="otroprogramador"
+                  width="120"
+                />
+              </button>
+              <div id="texto2" style="display: none">
+                <h3 id="otroprogramador" class="nombreprogramador">
+                  Marcos Castro Allegro
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus maxime aperiam distinctio tempora, adipisci
+                  aliquid ut voluptas enim, cupiditate vitae vel accusantium
+                  sunt quia totam magni. Quo quas optio eius..
+                </p>
+                <p>
+                  Linkedin:
+                  <a
+                    href="https://www.linkedin.com/in/otroprogramador/"
+                    target="_blank"
+                    >otro-programador</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div id="botonprogramador3" class="botonDescripcion">
+              <button onclick="mostrarTexto3()">
+                <img
+                  id="fotoprogramador2"
+                  class="fotoProgramador"
+                  src="img/pame1.JPEG"
+                  alt="programadora"
+                  width="120"
+                />
+              </button>
+              <div id="texto3" style="display: none">
+                <h3 id="programadora" class="nombreprogramador">
+                  Pamela Suarez
+                </h3>
+                <p>
+                  Programadora Full Stack Junior,innovadora y productiva.Manejo
+                  de varios lenguajes.Tengo como objetivo poner en practica mis
+                  habilidades en java,css y html; y proporcionarle a los
+                  usuarios de la empresa la mejor experiencia digital.Como asi
+                  tambien trabajar en equipos multiciplinarios y participar en
+                  el desarrollo de proyectos.
+                </p>
+                <p>
+                  Linkedin:
+                  <a
+                    href="https://www.linkedin.com/in/programadora/"
+                    target="_blank"
+                    >Pame_Suarez1</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div id="botonprogramador4" class="botonDescripcion">
+              <button onclick="mostrarTexto4()">
+                <img
+                  id="fotoivan"
+                  class="fotoProgramador"
+                  src="img/otraprogramadora.jpg"
+                  alt="otraprogramadora"
+                  width="120"
+                />
+              </button>
+              <div id="texto4" style="display: none">
+                <h3 id="otraprogramadora" class="nombreprogramador">
+                  Constanza Pereyra
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus maxime aperiam distinctio tempora, adipisci
+                  aliquid ut voluptas enim, cupiditate vitae vel accusantium
+                  sunt quia totam magni. Quo quas optio eius..
+                </p>
+                <p>
+                  Linkedin:
+                  <a
+                    href="https://www.linkedin.com/in/otraprogramadora/"
+                    target="_blank"
+                    >otra-programadora</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--boton de contacto-->
+          <div id="queresconocernos" class="columna">
+            <h2>¿Queres conocernos?</h2>
+            <p>Nosotros te estamos esperando</p>
+            <button
+              id="botoncontacto"
+              onclick="location.href='contactForm.html'"
+            >
+              Contáctanos
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-seperator" style="background-color: #073331">
+        <div class="container-lg">
+          <div class="row align-items-lg-start">
+            <div class="col-md-6">
+              <a
+                class="d-inline-flex align-items-center mb-2 text-decoration-none text-primary"
+                href="#"
+                aria-label="Bootstrap"
+              >
+                <img
+                  src="img/logomini.png"
+                  width="40"
+                  height="32"
+                  class="d-block me-2"
+                  viewBox="0 0 118 94"
+                /><title>Grupo 8</title>
+                <span class="fs-5">Grupo 8</span>
+              </a>
+              <ul class="list-unstyled small text-white">
+                <li class="mb-2">
+                  Página web creada y diseñada con esfuerzo y dedicación
+                </li>
+                <li class="mb-2">Curso de desarollo web</li>
+                <li class="mb-2">Marzo 2023</li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-white">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="index.html">Inicio</a></li>
+                <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
+                <li class="mb-2"><a href="contactForm.html">Contacto</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 text-primary">
+              <h5 class="redes" id="redes">Comunidad</h5>
+              <i class="lab la-facebook-f"></i>
+              <i class="lab la-linkedin-in"></i>
+              <i class="lab la-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script/script.js"></script>
+</html>

@@ -1,0 +1,57 @@
+body {
+    background-color: #489490;
+    color: #1e2222;
+}
+
+.services {
+    margin-top: 80pxrev;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.reviews {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.products {
+    margin-top: 80pxrev;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.titulo {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+  }
+
+  .socialIcons {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+  }
+  
+  .la-linkedin-in {
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+
+  .redes {
+    text-align:start;
+  }
