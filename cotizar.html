@@ -45,7 +45,8 @@
           </div>
           <!-- End Logo -->
           <button
-            class="navbar-toggler" data-bs-theme="text-primary"
+            class="navbar-toggler"
+            data-bs-theme="text-primary"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -82,102 +83,61 @@
       <!-- Navbar -->
     </header>
     <!--========== END HEADER ==========-->
-    <!-- Contenedor principal de Nosotros -->
+
+    <!-- Contenedor principal -->
     <div id="contenedor-nosotros-1" class="container">
-      <!-- Primer fila -->
-      <div class="container-fluid">
-        <div class="titulo" id="titulo">
-          DISEÑO DE ALTA INNOVACIÓN Y TECNOLOGÍA
-        </div>
-      </div>
-      <!--========== PAGE LAYOUT ==========-->
-      <!-- Servicios -->
-      <div class="container-fluid">
-        <div class="services" id="services">
-          <div class="row">
-            <div class="col">
-              <div class="service-info">
-                <h3>El arte de la codificación</h3>
-                <p class="margin-b-5">
-                  Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                  dolor
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="service-info">
-                <h3>Diseños responsives</h3>
-                <p class="margin-b-5">
-                  Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                  dolor
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="service-info">
-                <h3>Versatilidad de funcionamiento</h3>
-                <p class="margin-b-5">
-                  Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                  dolor
-                </p>
-              </div>
-            </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+
+      <!-- Formulario -->
+      <form>
+        <div class="form-group">
+          <label for="inputName">Nombre</label>
+          <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Ingrese su nombre">
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="service-info">
-                <h3>Documentación</h3>
-                <p class="margin-b-5">
-                  Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                  dolor
-                </p>
-              </div>
+          <div class="form-group">
+            <label for="inputLastName">Apellido</label>
+            <input type="text" class="form-control" id="inputLastName" aria-describedby="lastNameHelp" placeholder="Ingrese su Apellido">
             </div>
-            <div class="col">
-              <div class="service-info">
-                <h3>Metodologías Ágiles</h3>
-                <p class="margin-b-5">
-                  Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                  dolor
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="service-info">
-                <h3>Capacitación</h3>
-                <p class="margin-b-5">
-                  Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                  dolor
-                </p>
-              </div>
-            </div>
+        <div class="form-group">
+          <label for="InputEmail1">Email</label>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="ingrese email">
           </div>
+        <div class="form-group">
+          <label for="inputCountry">País</label>
+          <input type="text" class="form-control" id="inputCountry" placeholder="Ingrese su país">
         </div>
-      </div>
-
-      <!-- Servicios -->
-
-      <!-- Nuestro productos -->
-      <div class="container-fluid">
-        <div class="products" id="products">
-          <h2>Productos</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor
-            incididunt ut laboret dolore magna aliqua enim minim veniam
-            exercitation
-          </p>
+        <div class="form-group">
+          <label for="inputCity">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity" placeholder="Ingrese su ciudad">
+        </div><div class="form-group">
+          <label for="inputAddress">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su ciudad">
         </div>
-      </div>
-
-      <!-- Nuestros productos -->
-
-      <!-- Opiniones -->
-      <div class="container-fluid">
-        <div class="reviews" id="reviews">
-          <h2>Opiniones de clientes y usuarios</h2>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">¿Le gustaría recibir novedades de nuestros productos a su e-mail?</label>
         </div>
-      </div>
-    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
     <div class="footer-seperator" style="background-color: #073331">
       <div class="container-lg">
