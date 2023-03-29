@@ -19,6 +19,8 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js%22%3E"></script>
+    <script src="js/formularioCotizar.js"></script>
     <link rel="stylesheet" type="text/css" href="css\estilonosotros.css" />
     <link rel="stylesheet" type="text/css" href="css\index.css" />
     <title>Grupo 8 - Software</title>
@@ -86,24 +88,11 @@
 
     <!-- Contenedor principal -->
     <div id="contenedor-nosotros-1" class="container">
-      <nav aria-label="breadcrumb">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home</li>
-        </ol>
-      </nav>
-      
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-      </nav>
-      
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
+          <li class="breadcrumb-item active" aria-current="page">Datos personales</li>
+          <li class="breadcrumb-item"><a href="cotizar1.html">Datos del proyecto</a></li>
+          <li class="breadcrumb-item"><a href="cotizar2.html">Finalizar</a></li>
         </ol>
       </nav>
 
@@ -111,32 +100,32 @@
       <form>
         <div class="form-group">
           <label for="inputName">Nombre</label>
-          <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Ingrese su nombre">
+          <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="">
           </div>
           <div class="form-group">
             <label for="inputLastName">Apellido</label>
-            <input type="text" class="form-control" id="inputLastName" aria-describedby="lastNameHelp" placeholder="Ingrese su Apellido">
+            <input type="text" class="form-control" id="inputLastName" aria-describedby="lastNameHelp" placeholder="">
             </div>
         <div class="form-group">
           <label for="InputEmail1">Email</label>
-          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="ingrese email">
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="example@info.info">
           </div>
         <div class="form-group">
           <label for="inputCountry">País</label>
-          <input type="text" class="form-control" id="inputCountry" placeholder="Ingrese su país">
+          <input type="text" class="form-control" id="inputCountry" placeholder="">
         </div>
         <div class="form-group">
           <label for="inputCity">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity" placeholder="Ingrese su ciudad">
+          <input type="text" class="form-control" id="inputCity" placeholder="">
         </div><div class="form-group">
           <label for="inputAddress">Dirección</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su ciudad">
+          <input type="text" class="form-control" id="inputAddress" placeholder="calle, 123">
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">¿Le gustaría recibir novedades de nuestros productos a su e-mail?</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-secondary">Siguiente</button>
       </form>
 
     <div class="footer-seperator" style="background-color: #073331">
