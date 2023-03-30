@@ -97,35 +97,41 @@
       </nav>
 
       <!-- Formulario -->
-      <form>
+      <form id="basic-form">
         <div class="form-group">
           <label for="inputName">Nombre</label>
-          <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="">
+          <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="" required>
           </div>
           <div class="form-group">
             <label for="inputLastName">Apellido</label>
-            <input type="text" class="form-control" id="inputLastName" aria-describedby="lastNameHelp" placeholder="">
+            <input type="text" class="form-control" id="inputLastName" aria-describedby="lastNameHelp" placeholder="" required>
             </div>
         <div class="form-group">
           <label for="InputEmail1">Email</label>
-          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="example@info.info">
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="example@info.info" required>
           </div>
         <div class="form-group">
           <label for="inputCountry">País</label>
-          <input type="text" class="form-control" id="inputCountry" placeholder="">
+          <input type="text" class="form-control" id="inputCountry" placeholder="" required>
         </div>
         <div class="form-group">
           <label for="inputCity">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity" placeholder="">
+          <input type="text" class="form-control" id="inputCity" placeholder="" required>
         </div><div class="form-group">
           <label for="inputAddress">Dirección</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="calle, 123">
+          <input type="text" class="form-control" id="inputAddress" placeholder="calle, 123" required>
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">¿Le gustaría recibir novedades de nuestros productos a su e-mail?</label>
         </div>
-        <button type="submit" class="btn btn-secondary">Siguiente</button>
+        <button type="submit" class="btn btn-primary">Siguiente</button>
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
       </form>
 
     <div class="footer-seperator" style="background-color: #073331">
