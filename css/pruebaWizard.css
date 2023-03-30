@@ -10,14 +10,14 @@ body {
   .wizard-content-left {
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.45);
-    background-image: url("img/imgCotizar.jpg");
+    background-image: url("/img/imgCotizar.jpg");
     background-position: center center;
     background-size: cover;
     height: 100vh;
     padding: 30px;
   }
   .wizard-content-left h1 {
-    color: #ffffff;
+    color: #519999;
     font-size: 38px;
     font-weight: 600;
     padding: 12px 20px;
@@ -25,7 +25,7 @@ body {
   }
   
   .form-wizard {
-    color: #888888;
+    color: #1e2222;
     padding: 30px;
   }
   .form-wizard .wizard-form-radio {
@@ -52,7 +52,7 @@ body {
     outline: 0;
   }
   .form-wizard .wizard-form-radio input[type="radio"]:checked {
-    background-color: #fb1647;
+    background-color: #073331;
   }
   .form-wizard .wizard-form-radio input[type="radio"]:checked::before {
     content: "";
@@ -88,7 +88,7 @@ body {
     text-align: center;
   }
   .form-wizard .form-wizard-next-btn, .form-wizard .form-wizard-previous-btn, .form-wizard .form-wizard-submit {
-    background-color: #d65470;
+    background-color: #073331;
     color: #ffffff;
     display: inline-block;
     min-width: 100px;
@@ -118,7 +118,7 @@ body {
     width: 100%;
   }
   .form-wizard .form-wizard-previous-btn {
-    background-color: #fb1647;
+    background-color: #073331;
   }
   .form-wizard .form-control {
     font-weight: 300;
@@ -142,7 +142,7 @@ body {
     transition: 0.2s linear all;
   }
   .form-wizard .focus-input .wizard-form-text-label {
-    color: #d65470;
+    color: #073331;
     top: -18px;
     transition: 0.2s linear all;
     font-size: 12px;
@@ -183,18 +183,18 @@ body {
     width: 50%;
   }
   .form-wizard .form-wizard-steps li.active span, .form-wizard .form-wizard-steps li.activated span {
-    background-color: #d65470;
+    background-color: #073331;
     color: #ffffff;
   }
   .form-wizard .form-wizard-steps li.active::after, .form-wizard .form-wizard-steps li.activated::after {
-    background-color: #d65470;
+    background-color: #073331;
     left: 50%;
     width: 50%;
-    border-color: #d65470;
+    border-color: #073331;
   }
   .form-wizard .form-wizard-steps li.activated::after {
     width: 100%;
-    border-color: #d65470;
+    border-color: #073331;
   }
   .form-wizard .form-wizard-steps li:last-child::after {
     left: 0;
