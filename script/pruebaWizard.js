@@ -1,4 +1,10 @@
+function success() {
+	document.getElementsByClassName('.exito').style = 'display:block';
+}
+
+
 jQuery(document).ready(function() {
+	
 	// click on next button
 	jQuery('.form-wizard-next-btn').click(function() {
 		var parentFieldset = jQuery(this).parents('.wizard-fieldset');
@@ -62,8 +68,8 @@ jQuery(document).ready(function() {
 		});
 	});
 	//click on form submit button
-	jQuery(document).on("click",".form-wizard .form-wizard-submit" , function(){
-		var parentFieldset = jQuery(this).parents('.wizard-fieldset');
+	/*jQuery(document).on("click",".form-wizard .form-wizard-submit" , function(){
+		parentFieldset = jQuery(this).parents('.wizard-fieldset');
 		var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
 		parentFieldset.find('.wizard-required').each(function() {
 			var thisValue = jQuery(this).val();
@@ -74,7 +80,8 @@ jQuery(document).ready(function() {
 				jQuery(this).siblings(".wizard-form-error").slideUp();
 			}
 		});
-	});
+		
+	});*/
 	// focus on input field check empty or not
 	jQuery(".form-control").on('focus', function(){
 		var tmpThis = jQuery(this).val();
@@ -95,4 +102,15 @@ jQuery(document).ready(function() {
 			jQuery(this).siblings('.wizard-form-error').slideUp("3000");
 		}
 	});
+	$(".enviar").on("click",function(){
+
+		$(".exito").css("display","block")
+		
+	
+	});
+	
+	
 });
+
+
+
