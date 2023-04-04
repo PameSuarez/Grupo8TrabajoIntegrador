@@ -1,6 +1,6 @@
 body {
-    background-color: #489490;
-    color: #1e2222;
+    background-color: #020118;
+    color: #ffffff;
 }
 
 .services {
@@ -55,3 +55,21 @@ body {
   .redes {
     text-align:start;
   }
+
+  .barra {
+    color: #020118 !important
+  }
+ 
+  .item {
+    color: #020118;
+  }
+
+  .conTitulo {
+    height: 50vh;
+  }
+
+
+
+  020118
+
+  489490
