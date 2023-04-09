@@ -70,6 +70,48 @@ body {
 
 
 
-  020118
-
-  489490
+  .login {
+    border-radius: 30px !important;
+    background-color: #75ff00 !important;
+    color: white !important;
+    border-color: white !important;
+  }
+  
+  .cabecera {
+    background-image: url("");
+    height: 70vh;
+    flex-direction: column;
+  }
+  
+  .titulo1 {
+    color: white;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .t1,
+  .t3,
+  .t7 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+  }
+  
+  .navega, .login{
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 700 !important;
+  }
+  .t1,
+  .t2 {
+    padding-bottom: 20px;
+  }
+  
+  .t1 {
+    font-size: 40px !important;
+    color: white !important;
+  }
+  
+  .t2 {
+    font-size: 22px;
+    color: white !important;
+  }
+  
