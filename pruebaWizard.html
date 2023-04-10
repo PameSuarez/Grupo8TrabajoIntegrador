@@ -19,12 +19,13 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/formularioCotizar.js"></script>
     <script src="script/pruebaWizard.js"></script>
+    <script src="/script/resumenWizard.js"></script>
     <link rel="stylesheet" type="text/css" href="css\estilonosotros.css" />
     <link rel="stylesheet" type="text/css" href="css\index.css" />
-    <link rel="stylesheet" href="css/pruebaWizard.css" type="text/css">
+    <link rel="stylesheet" href="css/pruebaWizard.css" type="text/css" />
     <title>Grupo 8 - Software</title>
   </head>
   <body>
@@ -90,168 +91,274 @@
 
     <!-- Contenedor principal -->
     <div id="contenedor-nosotros-1" class="container">
-    <!-- Formulario -->
+      <!-- Formulario -->
       <section class="wizard-section">
-		<div class="row no-gutters">
-			<div class="col-lg-6 col-md-6">
-				<div class="wizard-content-left d-flex justify-content-center align-items-center">
-					<h1>Solicita cotización</h1>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-6">
-				<div class="form-wizard">
-					<form action="" method="post" role="form">
-						<div class="form-wizard-header">
-							<p>Completá todos los campos para avanzar al siguiente paso</p>
-							<ul class="list-unstyled form-wizard-steps clearfix">
-								<li class="active"><span>1</span></li>
-								<li><span>2</span></li>
-								<li><span>3</span></li>
-								<li><span>4</span></li>
-							</ul>
-						</div>
-						<fieldset class="wizard-fieldset show">
-							<h5>Datos personales</h5>
-							<div class="form-group">
-								<input type="text" class="form-control wizard-required" id="fname">
-								<label for="fname" class="wizard-form-text-label">Nombre*</label>
-								<div class="wizard-form-error"></div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control wizard-required" id="lname">
-								<label for="lname" class="wizard-form-text-label">Apellido*</label>
-								<div class="wizard-form-error"></div>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control wizard-required" id="email">
-								<label for="email" class="wizard-form-text-label">Email*</label>
-								<div class="wizard-form-error"></div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control wizard-required" id="country">
-								<label for="country" class="wizard-form-text-label">País*</label>
-								<div class="wizard-form-error"></div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control wizard-required" id="city">
-								<label for="city" class="wizard-form-text-label">Ciudad*</label>
-								<div class="wizard-form-error"></div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control wizard-required" id="address">
-								<label for="address" class="wizard-form-text-label" placeholder="calle 123">Domicilio*</label>
-								<div class="wizard-form-error"></div>
-							</div>
-							<div class="form-group clearfix">
-								<a href="javascript:;" class="form-wizard-next-btn float-right">Siguiente</a>
-							</div>
-						</fieldset>	
-						<fieldset class="wizard-fieldset">
-							<h5>Datos para proyecto</h5>
-							<select class="form-select form-wizard form-group" type="text" class="form-control wizard-required" id="product">
-								<option selected>Elija el producto que desee</option>
-								<option value="1">Landing page</option>
-								<option value="2">Aplicación web</option>
-								<div class="wizard-form-error"></div>
-							</select>
-							<select class="form-select form-wizard" type="text" class="form-control wizard-required" id="activity">
-								<option selected>Actividad en general que provee su empresa</option>
-								<option value="1">Producto</option>
-								<option value="2">Servicio</option>
-								<div class="wizard-form-error"></div>
-							</select>
-							<div class="form-group">
-								<input type="text" class="form-control wizard-required" id="typeBusiness">
-								<label for="typeBusiness" class="wizard-form-text-label">Rubro al que pertenece su empresa*</label>
-								<div class="wizard-form-error"></div>
-							</div>
-							
-							<div class="form-group clearfix">
-								<a href="javascript:;" class="form-wizard-previous-btn float-left">Atrás</a>
-								<a href="javascript:;" class="form-wizard-next-btn float-right">Siguiente</a>
-							</div>
-						</fieldset>	
-						<fieldset class="wizard-fieldset">
-							<h5>Descripción del proyecto</h5>
-							<div class="form-group">
-								<textarea class="form-control" name="info" id="info" cols="50" rows="10"></textarea>
-								<label for="bname" class="wizard-form-text-label">Descrición de su empresa, clientes y lo que espera del proyecto*</label>
-								<div class="wizard-form-error"></div>
-							</div>
-							<div class="form-group clearfix">
-								<a href="javascript:;" class="form-wizard-previous-btn float-left">Atrás</a>
-								<a href="javascript:;" class="form-wizard-next-btn float-right">Siguiente</a>
-							</div>
-						</fieldset>	
-						<fieldset class="wizard-fieldset">
-							<h5>Información Importante</h5>
-							<div class="card">
-								<div class="card-body">
-								  Una vez enviada la información solicitada, dentro de siete días le llegará a su correo electrónico un informe completo con la cotización requerida y un representante de nuestra empresa se contactará con usted par definir los detalles del mismo y evacuar cualquier otra consulta que desee realizar 
-								</div>
-							  </div>
-							<div class="form-group clearfix">
-								<a href="javascript:;" class="form-wizard-previous-btn float-left">Atrás</a>
-								<a href="javascript:;" class="form-wizard-submit float-right enviar">Enviar</a>
-								<div class="alert alert-success exito" role="alert">
-									Información enviada exitosamente!
-								</div>
-							</div>
-						</fieldset>	
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-
-     <!-- Footer --> 
-    <div class="footer-seperator" style="background-color: #073331">
-      <div class="container-lg">
-        <div class="row align-items-lg-start">
-          <div class="col-md-6">
-            <a
-              class="d-inline-flex align-items-center mb-2 text-decoration-none text-primary"
-              href="#"
-              aria-label="Bootstrap"
+        <div class="row no-gutters">
+          <div class="col-lg-6 col-md-6">
+            <div
+              class="wizard-content-left d-flex justify-content-center align-items-center"
             >
-              <img
-                src="img/logomini.png"
-                width="40"
-                height="32"
-                class="d-block me-2"
-                viewBox="0 0 118 94"
-              /><title>Grupo 8</title>
-              <span class="fs-5">Grupo 8</span>
-            </a>
-            <ul class="list-unstyled small text-white">
-              <li class="mb-2">
-                Página web creada y diseñada con esfuerzo y dedicación
-              </li>
-              <li class="mb-2">Curso de desarollo web</li>
-              <li class="mb-2">Marzo 2023</li>
-            </ul>
+              <h1>Solicita cotización</h1>
+            </div>
           </div>
-          <div class="col-md-3 text-white">
-            <h5>Links</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="index.html">Inicio</a></li>
-              <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
-              <li class="mb-2"><a href="contactForm.html">Contacto</a></li>
-			  <li class="mb-2"><a href="pruebaWizard.html">Cotizar</a></li>
-            </ul>
-          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="form-wizard">
+              <form action="" method="post" role="form">
+                <div class="form-wizard-header">
+                  <p>
+                    Completá todos los campos para avanzar al siguiente paso
+                  </p>
+                  <ul class="list-unstyled form-wizard-steps clearfix">
+                    <li class="active"><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                  </ul>
+                </div>
+                <fieldset class="wizard-fieldset show">
+                  <h5>Datos personales</h5>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control wizard-required"
+                      id="fname"
+                    />
+                    <label for="fname" class="wizard-form-text-label"
+                      >Nombre*</label
+                    >
+                    <div class="wizard-form-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control wizard-required"
+                      id="lname"
+                    />
+                    <label for="lname" class="wizard-form-text-label"
+                      >Apellido*</label
+                    >
+                    <div class="wizard-form-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control wizard-required"
+                      id="email"
+                    />
+                    <label for="email" class="wizard-form-text-label"
+                      >Email*</label
+                    >
+                    <div class="wizard-form-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control wizard-required"
+                      id="country"
+                    />
+                    <label for="country" class="wizard-form-text-label"
+                      >País*</label
+                    >
+                    <div class="wizard-form-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control wizard-required"
+                      id="city"
+                    />
+                    <label for="city" class="wizard-form-text-label"
+                      >Ciudad*</label
+                    >
+                    <div class="wizard-form-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control wizard-required"
+                      id="address"
+                    />
+                    <label
+                      for="address"
+                      class="wizard-form-text-label"
+                      placeholder="calle 123"
+                      >Domicilio*</label
+                    >
+                    <div class="wizard-form-error"></div>
+                  </div>
+                  <div class="form-group clearfix">
+                    <a
+                      href="javascript:;"
+                      class="form-wizard-next-btn float-right"
+                      >Siguiente</a
+                    >
+                  </div>
+                </fieldset>
+                <fieldset class="wizard-fieldset">
+                  <h5>Datos para proyecto</h5>
+                  <select
+                    class="form-select form-wizard form-group"
+                    type="text"
+                    class="form-control wizard-required"
+                    id="product"
+                  >
+                    <option selected>Elija el producto que desee</option>
+                    <option value="1">Landing page</option>
+                    <option value="2">Aplicación web</option>
+                    <div class="wizard-form-error"></div>
+                  </select>
+                  <select
+                    class="form-select form-wizard"
+                    type="text"
+                    class="form-control wizard-required"
+                    id="activity"
+                  >
+                    <option selected>
+                      Actividad en general que provee su empresa
+                    </option>
+                    <option value="1">Producto</option>
+                    <option value="2">Servicio</option>
+                    <div class="wizard-form-error"></div>
+                  </select>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control wizard-required"
+                      id="typeBusiness"
+                    />
+                    <label for="typeBusiness" class="wizard-form-text-label"
+                      >Rubro al que pertenece su empresa*</label
+                    >
+                    <div class="wizard-form-error"></div>
+                  </div>
 
-          <div class="col-md-3 text-primary">
-            <h5 class="redes" id="redes">Comunidad</h5>
-            <i class="lab la-facebook-f"></i>
-            <i class="lab la-linkedin-in"></i>
-            <i class="lab la-twitter"></i>
+                  <div class="form-group clearfix">
+                    <a
+                      href="javascript:;"
+                      class="form-wizard-previous-btn float-left"
+                      >Atrás</a
+                    >
+                    <a
+                      href="javascript:;"
+                      class="form-wizard-next-btn float-right"
+                      >Siguiente</a
+                    >
+                  </div>
+                </fieldset>
+                <fieldset class="wizard-fieldset">
+                  <h5>Descripción del proyecto</h5>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      name="info"
+                      id="info"
+                      cols="50"
+                      rows="10"
+                    ></textarea>
+                    <label for="bname" class="wizard-form-text-label"
+                      >Descrición de su empresa, clientes y lo que espera del
+                      proyecto*</label
+                    >
+                    <div class="wizard-form-error"></div>
+                  </div>
+                  <div class="form-group clearfix">
+                    <a
+                      href="javascript:;"
+                      class="form-wizard-previous-btn float-left"
+                      >Atrás</a
+                    >
+                    <a
+                      href="javascript:;"
+                      class="form-wizard-next-btn float-right"
+                      >Siguiente</a
+                    >
+                  </div>
+                </fieldset>
+                <fieldset class="wizard-fieldset">
+                  <h5>Información Importante</h5>
+                  <div class="card">
+                    <div class="card-body">
+                      Una vez enviada la información solicitada, dentro de siete
+                      días le llegará a su correo electrónico un informe
+                      completo con la cotización requerida y un representante de
+                      nuestra empresa se contactará con usted par definir los
+                      detalles del mismo y evacuar cualquier otra consulta que
+                      desee realizar
+                    </div>
+                  </div>
+                  <p id="resu"></p>
+                  <div class="form-group clearfix">
+                    <a
+                      href="javascript:;"
+                      class="form-wizard-previous-btn float-left"
+                      >Atrás</a
+                    >
+                    <a
+                      href="javascript:;"
+                      class="form-wizard-submit float-right enviar"
+                      >Enviar</a
+                    >
+                    <div class="alert alert-success exito" role="alert">
+                      Información enviada exitosamente!
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div class="footer-seperator" style="background-color: #073331">
+        <div class="container-lg">
+          <div class="row align-items-lg-start">
+            <div class="col-md-6">
+              <a
+                class="d-inline-flex align-items-center mb-2 text-decoration-none text-primary"
+                href="#"
+                aria-label="Bootstrap"
+              >
+                <img
+                  src="img/logomini.png"
+                  width="40"
+                  height="32"
+                  class="d-block me-2"
+                  viewBox="0 0 118 94"
+                /><title>Grupo 8</title>
+                <span class="fs-5">Grupo 8</span>
+              </a>
+              <ul class="list-unstyled small text-white">
+                <li class="mb-2">
+                  Página web creada y diseñada con esfuerzo y dedicación
+                </li>
+                <li class="mb-2">Curso de desarollo web</li>
+                <li class="mb-2">Marzo 2023</li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-white">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="index.html">Inicio</a></li>
+                <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
+                <li class="mb-2"><a href="contactForm.html">Contacto</a></li>
+                <li class="mb-2"><a href="pruebaWizard.html">Cotizar</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 text-primary">
+              <h5 class="redes" id="redes">Comunidad</h5>
+              <i class="lab la-facebook-f"></i>
+              <i class="lab la-linkedin-in"></i>
+              <i class="lab la-twitter"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-	<script src="script/pruebaWizard.js"></script>
+
+    <script src="script/pruebaWizard.js"></script>
     <script src="script/script.js"></script>
+    <script src="/script/resumenWizard.js"></script>
   </body>
-  
 </html>
