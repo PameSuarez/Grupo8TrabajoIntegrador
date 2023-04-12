@@ -1,70 +1,22 @@
-body {
-    background-color: #489490;
+
+#titulo-principal-nosotros {
+    font-size: 3em;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.container-lg {
-    margin: 0 auto;
-    padding: 20px;
+#parrafo-nosotros {
+    font-size: 1.3em;
 }
 
 #imagen_nosotros {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     margin-top:70px;
     margin-left: auto;
 }
 
-#equipo-programadores{
-text-align: left;
+#titulo-programadores {
+    font-size: 2.4em;
 }
-
-#contenedor-equipo, #contenedor-nosotros-1 {
-    display: block;
-} 
-
-.fila {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.columna {
-    flex-basis: calc(50% - 10px);
-    
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-
-
-#botoncontacto {
-    height: 70px;
-    background-color: #042222;
-    position: static;
-    bottom: 250px;
-    border-radius: 10%;
-    margin-left: 90px;
-    width: 200px;
-    font-size: 25px;
-    font-style: italic;
-    color:aliceblue;
-}
-
-#botoncontacto:hover {
-    background-color: lightblue;
-    color:#042222;
-  }
 
 .fotoProgramador {
     transition: 0.5s;
@@ -74,37 +26,9 @@ text-align: left;
     transform: scale(1.2);
 }
 
-h1 {
-    color:#1e2222;
-}
-
-p {
-    color:#1e2222;
-}
-
-#tituloEquipo {
-    font-size: 45px; 
-}
 
 #parrafoProgramadores {
     font-size: 20px;
 }
 
-#equipo-programadores {
-    font-size: 40px;
-}
 
-#tituloConocernos {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 100px;
-}
-
-#textoConocernos{
-    font-size: 27px;
-    text-align: center;
-}
-
-#queresconocernos {
-    align-items: center;
-}
