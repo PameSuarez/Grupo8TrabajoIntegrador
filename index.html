@@ -19,14 +19,18 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="/script/api.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" type="text/css" href="css\estilonosotros.css" />
     <link rel="stylesheet" type="text/css" href="css\index.css" />
 
-   
     <title>Grupo 8 - Software</title>
   </head>
   <body>
     <!--========== HEADER ==========-->
+    <div class="container-fluid" style="background-color: #75ff00; color: #020118;">
+      <div class="row align-items-center titulo1 justify-content-center">
+        <div class="col-lg-8 col-sm-12">
     <header class="header navbar-fixed-top">
       <!-- Navbar -->
       <nav
@@ -47,7 +51,8 @@
           </div>
           <!-- End Logo -->
           <button
-            class="navbar-toggler barra" data-bs-theme="text-primary"
+            class="navbar-toggler barra"
+            data-bs-theme="text-primary"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -64,7 +69,10 @@
           >
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item">
-                <a class="nav-link active item" aria-current="page" href="index.html"
+                <a
+                  class="nav-link active item"
+                  aria-current="page"
+                  href="index.html"
                   >Inicio</a
                 >
               </li>
@@ -83,130 +91,138 @@
       </nav>
       <!-- Navbar -->
     </header>
+  </div>
+</div>
+</div>
     <!--========== END HEADER ==========-->
-    <!-- Contenedor principal de Nosotros -->
-    
-      <!-- Primer fila -->
-      <div class="container-fluid cabecera">
-        <div class="row align-items-center titulo1 justify-content-center">
-          <div class="col-lg-6 col-sm-12">
-            <div class="text-container">
-              <h1 class="t1">Diseños de alta innovación y tecnología</h1>
-              <p class="t2">
-                Tenemos propuestas y soluciones para todos tus proyectos e ideas
-              </p>
-              <a class="btn btn-outline-success navega login" href="/nosotros.html">
-                Conocenos
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--========== PAGE LAYOUT ==========-->
-      <!-- Servicios -->
-      <div class="container-fluid cabecera3">
-        <div class="row align-items-center titulo1 justify-content-center">
-          <div class="col-lg-8 col-sm-12">
-            <div class="text-container">
-              <h2 class="t3">Características de nuestros servicios</h2>
-              <div class="row align-items-center justify-content-center">
-                <div class="col-lg-4 col-sm-12">
-                  <div class="service-info">
-                    <h3 class="t01">El arte de la codificación</h3>
-                    <p class="margin-b-5 t4">
-                      Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                      dolor
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                  <div class="service-info">
-                    <h3 class="t01">Metodologías Ágiles</h3>
-                    <p class="margin-b-5 t4">
-                      Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                      dolor
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                  <div class="service-info">
-                    <h3 class="t01">Capacitación</h3>
-                    <p class="margin-b-5 t4">
-                      Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
-                      dolor
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   
 
-      <!-- Servicios -->
-
-      <!-- cotizá productos -->
-      <div class="container-fluid cabecera4">
-        <div class="row align-items-center titulo2 justify-content-center">
-          <div
-            class="col-lg-8 col-sm-12 justify-content-center align-items-center"
-            style="display: flex"
-          >
-            <p class="t5">Obtené un presupuesto detallado para tus proyectos</p>
-            <a class="btn btn-outline-success navega login" href="/pruebaWizard.html">
-              Cotizá aquí
+    <!-- Primer fila -->
+    <div class="container-fluid cabecera">
+      <div class="row align-items-center titulo1 justify-content-center">
+        <div class="col-lg-6 col-sm-12">
+          <div class="text-container">
+            <h1 class="t1">Diseños de alta innovación y tecnología</h1>
+            <p class="t2">
+              Tenemos propuestas y soluciones para todos tus proyectos e ideas
+            </p>
+            <a
+              class="btn btn-outline-success navega login"
+              href="/nosotros.html"
+            >
+              Conocenos
             </a>
           </div>
         </div>
       </div>
-
-      <!-- Nuestros productos -->
-
-      <!-- Opiniones -->
-      <div class="container-fluid cabecera5">
-        <div class="row align-items-center titulo1 justify-content-center">
-          <div class="col-lg-8 col-sm-12">
-            <div class="text-container">
-              <h2 class="t3">Valoración de nuestro clientes</h2>
-              <div class="row align-items-center justify-content-center">
-                <div class="col-lg-4 col-sm-12">
-                  
+    </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Servicios -->
+    <div class="container-fluid cabecera3">
+      <div class="row align-items-center titulo1 justify-content-center">
+        <div class="col-lg-8 col-sm-12">
+          <div class="text-container">
+            <h2 class="t3">Características de nuestros servicios</h2>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-4 col-sm-12">
+                <div class="service-info">
+                  <h3 class="t01">El arte de la codificación</h3>
+                  <p class="margin-b-5 t4">
+                    Lorem ipsum dolor amet consectetur ut consequat siad
+                    esqudiat dolor
+                  </p>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                  
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="service-info">
+                  <h3 class="t01">Metodologías Ágiles</h3>
+                  <p class="margin-b-5 t4">
+                    Lorem ipsum dolor amet consectetur ut consequat siad
+                    esqudiat dolor
+                  </p>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                 
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="service-info">
+                  <h3 class="t01">Capacitación</h3>
+                  <p class="margin-b-5 t4">
+                    Lorem ipsum dolor amet consectetur ut consequat siad
+                    esqudiat dolor
+                  </p>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid cabecera7">
-        <div class="row align-items-center titulo1 justify-content-center">
-          <div class="col-lg-6 col-sm-12">
-            <div class="text-container">
-              <p class="t7">
-                Potencia tu desarrollo con nuestras herramientas
-              </p>
-  
-              
+    <!-- Servicios -->
+
+    <!-- cotizá productos -->
+    <div class="container-fluid cabecera4">
+      <div class="row align-items-center titulo2 justify-content-center">
+        <div
+          class="col-lg-8 col-sm-12 justify-content-center align-items-center"
+          style="display: flex"
+        >
+          <p class="t5">Obtené un presupuesto detallado para tus proyectos</p>
+          <a
+            class="btn btn-outline-success navega login"
+            href="/pruebaWizard.html"
+          >
+            Cotizá aquí
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nuestros productos -->
+
+    <!-- Opiniones -->
+    <div class="container-fluid cabecera5">
+      <div class="row align-items-center titulo1 justify-content-center">
+        <div class="col-lg-8 col-sm-12">
+          <div class="text-container">
+            <h2 class="t3">Valoración de nuestro clientes</h2>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-3 col-sm-12">
+                <div class="coment1" id="coment1"></div>
+              </div>
+              <div class="col-lg-3 col-sm-12">
+                <div class="coment2" id="coment2"></div>
+              </div>
+              <div class="col-lg-3 col-sm-12">
+                <div class="coment3" id="coment3"></div>
+              </div>
+              <div class="col-lg-3 col-sm-12">
+                <div class="coment4" id="coment4"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    <div class="footer-seperator" style="background-color: #636666">
-      <div class="container-lg">
-        <div class="row align-items-lg-start">
-          <div class="col-md-6">
+    <div class="container-fluid cabecera7">
+      <div class="row align-items-center titulo1 justify-content-center">
+        <div class="col-lg-6 col-sm-12">
+          <div class="text-container">
+            <p class="t7">Potencia tu desarrollo con nuestras herramientas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #636666;">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8 col-sm-12">
+          <div class="row align-items-start footer">
+          <div class="col-md-6 " style="align-items: center !important;">
             <a
-              class="d-inline-flex align-items-center mb-2 text-decoration-none"
+              class="d-inline-flex text-decoration-none"
               href="#"
-              aria-label="Bootstrap"
+              
             >
               <img
                 src="img/logomini.png"
@@ -228,10 +244,18 @@
           <div class="col-md-3 text-white">
             <h5>Links</h5>
             <ul class="list-unstyled">
-              <li class="mb-2"><a class="lista" href="index.html">Inicio</a></li>
-              <li class="mb-2"><a class="lista" href="nosotros.html">Nosotros</a></li>
-              <li class="mb-2"><a class="lista" href="contactForm.html">Contacto</a></li>
-              <li class="mb-2"><a class="lista" href="pruebaWizard.html">Cotizar</a></li>
+              <li class="mb-2">
+                <a class="lista" href="index.html">Inicio</a>
+              </li>
+              <li class="mb-2">
+                <a class="lista" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="mb-2">
+                <a class="lista" href="contactForm.html">Contacto</a>
+              </li>
+              <li class="mb-2">
+                <a class="lista" href="pruebaWizard.html">Cotizar</a>
+              </li>
             </ul>
           </div>
 
@@ -244,8 +268,8 @@
         </div>
       </div>
     </div>
+    </div>
 
     <script src="script/script.js"></script>
   </body>
 </html>
-

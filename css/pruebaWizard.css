@@ -1,12 +1,9 @@
-body {
-    background-color: #489490;
-    color: #1e2222;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-  }
+
+  body {
+    background-color: #020118;
+    color: #ffffff;
+}
+  
   .wizard-content-left {
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.45);
@@ -27,6 +24,10 @@ body {
   .form-wizard {
     color: #1e2222;
     padding: 30px;
+  }
+
+  .form-wizard-header{
+    color:white;
   }
   .form-wizard .wizard-form-radio {
     display: inline-block;
@@ -142,11 +143,12 @@ body {
     transition: 0.2s linear all;
   }
   .form-wizard .focus-input .wizard-form-text-label {
-    color: #073331;
+    color: #75ff00 !important;
     top: -18px;
     transition: 0.2s linear all;
     font-size: 12px;
   }
+
   .form-wizard .form-wizard-steps {
     margin: 30px 0;
   }

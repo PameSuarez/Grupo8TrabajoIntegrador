@@ -159,7 +159,7 @@ body {
 
   .cabecera5 {
     background-color: #ededed;
-    height: 40vh;
+    height: 60vh;
   }
 
   .cabecera7 {
@@ -184,4 +184,10 @@ body {
     color: #020118 !important;
   }
 
-  #f2f2f3
+  .coment1, .coment2, .coment3, .coment4 {
+    color: #020118;
+  }
+
+ .footer{
+  padding-top: 20px;
+ }

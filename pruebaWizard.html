@@ -23,74 +23,83 @@
     <script src="js/formularioCotizar.js"></script>
     <script src="script/pruebaWizard.js"></script>
     <script src="/script/resumenWizard.js"></script>
-    <link rel="stylesheet" type="text/css" href="css\estilonosotros.css" />
+    
     <link rel="stylesheet" type="text/css" href="css\index.css" />
     <link rel="stylesheet" href="css/pruebaWizard.css" type="text/css" />
     <title>Grupo 8 - Software</title>
   </head>
   <body>
-    <!--========== HEADER ==========-->
-    <header class="header navbar-fixed-top">
-      <!-- Navbar -->
-      <nav
-        class="navbar navbar-expand-lg"
-        data-bs-theme="dark"
-        style="background-color: #073331; color: #01eee4"
-      >
-        <div class="container-fluid">
-          <!-- Logo -->
-          <div class="logo">
-            <a class="logo-wrap" href="index.html">
-              <img
-                class="logo-img logo-img-main"
-                src="img/logonav.png"
-                alt="Grupo 8 Logo"
-              />
-            </a>
-          </div>
-          <!-- End Logo -->
-          <button
-            class="navbar-toggler"
-            data-bs-theme="text-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse navbar-nav justify-content-end"
-            id="navbarNav"
-            style="color: #01eee4"
-          >
-            <ul class="navbar-nav navbar-nav-right">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactForm.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="pruebaWizard.html">Cotizar</a>
-              </li>
-            </ul>
-          </div>
+   <!--========== HEADER ==========-->
+   <div class="container-fluid" style="background-color: #75ff00; color: #020118;">
+    <div class="row align-items-center titulo1 justify-content-center">
+      <div class="col-lg-8 col-sm-12">
+  <header class="header navbar-fixed-top">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg"
+      data-bs-theme="dark"
+      style="background-color: #75ff00; color: #020118"
+    >
+      <div class="container-fluid">
+        <!-- Logo -->
+        <div class="logo">
+          <a class="logo-wrap" href="index.html">
+            <img
+              class="logo-img logo-img-main"
+              src="img/logonav.png"
+              alt="Grupo 8 Logo"
+            />
+          </a>
         </div>
-      </nav>
-      <!-- Navbar -->
-    </header>
-    <!--========== END HEADER ==========-->
+        <!-- End Logo -->
+        <button
+          class="navbar-toggler barra"
+          data-bs-theme="text-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse navbar-nav justify-content-end"
+          id="navbarNav"
+          style="color: #01eee4"
+        >
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item">
+              <a
+                class="nav-link item"
+                aria-current="page"
+                href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item" href="contactForm.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active item" href="pruebaWizard.html">Cotizar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+</div>
+</div>
+</div>
+  <!--========== END HEADER ==========-->
 
     <!-- Contenedor principal -->
-    <div id="contenedor-nosotros-1" class="container">
+    
       <!-- Formulario -->
       <section class="wizard-section">
         <div class="row no-gutters justify-content-center align-items-center">
@@ -110,7 +119,7 @@
                   </ul>
                 </div>
                 <fieldset class="wizard-fieldset show">
-                  <h5>Datos personales</h5>
+                  <h5 style="color: white !important;">Datos personales</h5>
                   <div class="form-group">
                     <input
                       type="text"
@@ -318,14 +327,15 @@
       </section>
 
       <!-- Footer -->
-      <div class="footer-seperator" style="background-color: #073331">
-        <div class="container-lg">
-          <div class="row align-items-lg-start">
-            <div class="col-md-6">
+      <div class="container-fluid" style="background-color: #636666;">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-8 col-sm-12">
+            <div class="row align-items-start footer">
+            <div class="col-md-6 " style="align-items: center !important;">
               <a
-                class="d-inline-flex align-items-center mb-2 text-decoration-none text-primary"
+                class="d-inline-flex text-decoration-none"
                 href="#"
-                aria-label="Bootstrap"
+                
               >
                 <img
                   src="img/logomini.png"
@@ -347,14 +357,22 @@
             <div class="col-md-3 text-white">
               <h5>Links</h5>
               <ul class="list-unstyled">
-                <li class="mb-2"><a href="index.html">Inicio</a></li>
-                <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
-                <li class="mb-2"><a href="contactForm.html">Contacto</a></li>
-                <li class="mb-2"><a href="pruebaWizard.html">Cotizar</a></li>
+                <li class="mb-2">
+                  <a class="lista" href="index.html">Inicio</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lista" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lista" href="contactForm.html">Contacto</a>
+                </li>
+                <li class="mb-2">
+                  <a class="lista" href="pruebaWizard.html">Cotizar</a>
+                </li>
               </ul>
             </div>
-
-            <div class="col-md-3 text-primary">
+  
+            <div class="col-md-3">
               <h5 class="redes" id="redes">Comunidad</h5>
               <i class="lab la-facebook-f"></i>
               <i class="lab la-linkedin-in"></i>
@@ -363,8 +381,7 @@
           </div>
         </div>
       </div>
-    </div>
-
+      </div>
     <script src="script/pruebaWizard.js"></script>
     <script src="script/script.js"></script>
     <script src="/script/resumenWizard.js"></script>
