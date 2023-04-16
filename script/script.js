@@ -24,3 +24,9 @@ function mostrarTexto3() {
     texto.style.display = "none";
   }
 }
+
+const btnEnviarMensaje = document.getElementById('enviar-mensaje');
+
+btnEnviarMensaje.addEventListener('click', function() {
+  alert('Mensaje enviado');
+});
