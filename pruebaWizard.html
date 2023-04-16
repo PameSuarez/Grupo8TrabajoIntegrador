@@ -20,7 +20,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="js/formularioCotizar.js"></script>
     <script src="script/pruebaWizard.js"></script>
     <script src="/script/resumenWizard.js"></script>
     
@@ -192,13 +191,14 @@
                   <div class="form-group clearfix">
                     <a
                       href="javascript:;"
-                      class="form-wizard-next-btn float-right"
+                      class="form-wizard-next-btn float-right" style="text-decoration: none;"
                       >Siguiente</a
                     >
                   </div>
                 </fieldset>
                 <fieldset class="wizard-fieldset">
-                  <h5>Datos para proyecto</h5>
+                  <h5 style="color: white !important;">Datos para proyecto</h5>
+                  <div class="form-group">
                   <select
                     class="form-select form-wizard form-group"
                     type="text"
@@ -208,8 +208,10 @@
                     <option selected>Elija el producto que desee</option>
                     <option value="1">Landing page</option>
                     <option value="2">Aplicación web</option>
-                    <div class="wizard-form-error"></div>
+                    
                   </select>
+                  <div class="wizard-form-error"></div>
+                </div>
                   <select
                     class="form-select form-wizard"
                     type="text"
@@ -249,7 +251,7 @@
                   </div>
                 </fieldset>
                 <fieldset class="wizard-fieldset">
-                  <h5>Descripción del proyecto</h5>
+                  <h5 style="color: white !important;">Descripción del proyecto</h5>
                   <div class="form-group">
                     <textarea
                       class="form-control"
@@ -279,7 +281,7 @@
                 </fieldset>
                 <fieldset class="wizard-fieldset">
                   <div class="mostrarResumen">
-                  <h5>Verificá los datos ingresados</h5>
+                  <h5 style="color: white !important;">Verificá los datos ingresados</h5>
 
                   <ul class="list-group">
                     <li class="list-group-item" id="listarNombre"></li>
@@ -293,7 +295,7 @@
                     <li class="list-group-item" id="listarNegocio"></li>
                   </ul>
                 </div>
-                  <h5>Información Importante</h5>
+                  <h5 style="color: white !important;">Información Importante</h5>
                   <div class="card">
                     <div class="card-body">
                       Una vez enviada la información solicitada, dentro de siete
