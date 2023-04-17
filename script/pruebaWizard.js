@@ -3,22 +3,32 @@ function success() {
 }
 
 jQuery(document).ready(function() {
+  
 	// click on next button
 	jQuery('.form-wizard-next-btn').click(function() {
+    $("#basic-form").validate();
 		var parentFieldset = jQuery(this).parents('.wizard-fieldset');
 		var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
 		var next = jQuery(this);
 		var nextWizardStep = true;
 		parentFieldset.find('.wizard-required').each(function(){
 			var thisValue = jQuery(this).val();
+      var email = $(".input input[name=email]").val();
+      var regex = /^([a-zA-Z0-9_\.\+\-])+\@(([a-zA-z0-9\-])+\.)+([a-zA-Z0-9]{2,4})$/;
 
 			if( thisValue == "") {
-				jQuery(this).siblings(".wizard-form-error").slideDown();
+        jQuery(this).siblings(".wizard-form-error .wizard-email.error").slideDown();
+        console.log("valores");
 				nextWizardStep = false;
 			}
+
+       
+    
+     
 			else {
-				jQuery(this).siblings(".wizard-form-error").slideUp();
-			}
+				jQuery(this).siblings(".wizard-form-error .wizard-email.error").slideUp();
+        
+    	}
 		});
 		if( nextWizardStep) {
 			next.parents('.wizard-fieldset').removeClass("show","400");
@@ -151,4 +161,6 @@ jQuery(document).ready(function() {
 	document.getElementById("listarActividad").innerHTML = "Actividad: " + valorSeleccionado2;
 	document.getElementById("listarNegocio").innerHTML = "Tipo de negocio: " + negocio;
   });
+
 });
+

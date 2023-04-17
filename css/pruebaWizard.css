@@ -119,6 +119,17 @@
     height: 2px;
     width: 100%;
   }
+  .form-wizard .wizard-email-error {
+    display: none;
+    color: white;
+    background-color: #d70b0b;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
   .form-wizard .form-wizard-previous-btn {
     background-color:#75ff00;
   }

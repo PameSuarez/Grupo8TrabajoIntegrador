@@ -20,8 +20,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src = "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js" ></script> 
     <script src="script/pruebaWizard.js"></script>
     <script src="/script/resumenWizard.js"></script>
+    
     
     <link rel="stylesheet" type="text/css" href="css\index.css" />
     <link rel="stylesheet" href="css/pruebaWizard.css" type="text/css" />
@@ -119,13 +121,13 @@
                 </div>
                 <fieldset class="wizard-fieldset show">
                   <h5 style="color: white !important;">Datos personales</h5>
-                  <div class="form-group">
+                  <div class="form-group" id="basic-form">
                     <input
                       type="text"
                       class="form-control wizard-required"
                       id="fname"
                     />
-                    <label for="fname" class="wizard-form-text-label"
+                    <label for="fname" name="fname" class="wizard-form-text-label"
                       >Nombre*</label
                     >
                     <div class="wizard-form-error"></div>
@@ -141,15 +143,18 @@
                     >
                     <div class="wizard-form-error"></div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group" id="basic-form">
                     <input
                       type="email"
                       class="form-control wizard-required"
                       id="email"
+                      name="email"
+                      id="basic-form"
                     />
                     <label for="email" class="wizard-form-text-label"
                       >Email*</label
                     >
+                    <div class="wizard-email-error">Ingrese un email válido</div>
                     <div class="wizard-form-error"></div>
                   </div>
                   <div class="form-group">
@@ -218,6 +223,7 @@
                     class="form-control wizard-required"
                     id="activity"
                   >
+                  
                     <option selected>
                       Actividad en general que provee su empresa
                     </option>
@@ -261,7 +267,7 @@
                       rows="10"
                     ></textarea>
                     <label for="bname" class="wizard-form-text-label"
-                      >Descrición de su empresa, clientes y lo que espera del
+                      >Descripción de su empresa, clientes y lo que espera del
                       proyecto*</label
                     >
                     <div class="wizard-form-error"></div>
@@ -387,5 +393,6 @@
     <script src="script/pruebaWizard.js"></script>
     <script src="script/script.js"></script>
     <script src="/script/resumenWizard.js"></script>
+    
   </body>
 </html>
