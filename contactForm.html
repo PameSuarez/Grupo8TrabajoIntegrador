@@ -31,7 +31,7 @@
       <nav
         class="navbar navbar-expand-lg"
         data-bs-theme="dark"
-        style="background-color: #073331; color: #01eee4"
+        style="background-color: #75ff00; color: #020118"
       >
         <div class="container-fluid">
           <!-- Logo -->
@@ -46,7 +46,7 @@
           </div>
           <!-- End Logo -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler barra" data-bs-theme="text-primary"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -63,18 +63,18 @@
           >
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
+                <a class="nav-link active item" aria-current="page" href="index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-link item" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="contactForm.html">Contacto</a>
+                <a class="nav-link item" href="contactForm.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pruebaWizard.html">Cotizar</a>
+                <a class="nav-link item" href="pruebaWizard.html">Cotizar</a>
               </li>
             </ul>
           </div>
@@ -83,25 +83,34 @@
       <!-- Navbar -->
     </header>
     <!--========== END HEADER ==========-->
-
-    <form action="">
-      <legend>CONTACTO</legend>
-      <input type="text" name="Nombre" placeholder="Nombre" />
-      <input type="text" name="Telefono" placeholder="Telefono" />
-      <input type="text" name="Correo" placeholder="Correo" />
-      <textarea
-        name="Mensaje"
-        placeholder="Escriba aqui su consulta"
-      ></textarea>
-      <input type="button" value="Enviar" id="boton" />
-    </form>
-
-    <div class="footer-seperator" style="background-color: #073331">
+    <main>  
+      <div class="container">
+        <div class="row-align-items-center">
+          
+          <div class="col-lg-12 col-sm-12">
+              <form action="">
+                <legend>CONTACTO</legend>
+                <input type="text" name="Nombre" placeholder="Nombre" />
+                <input type="text" name="Telefono" placeholder="Telefono" />
+                <input type="text" name="Correo" placeholder="Correo" />
+                <textarea
+                  name="Mensaje"
+                  placeholder="Escriba aqui su consulta"
+                ></textarea>
+                <a class="btn btn-outline-success navega login" id="enviar-mensaje" href="contactForm.html">Enviar</a>
+              </form>
+            </div>
+            
+        </div>
+          
+      </div>
+    </main>
+    <div class="footer-seperator" style="background-color: #636666">
       <div class="container-lg">
         <div class="row align-items-lg-start">
           <div class="col-md-6">
             <a
-              class="d-inline-flex align-items-center mb-2 text-decoration-none text-primary"
+              class="d-inline-flex align-items-center mb-2 text-decoration-none"
               href="#"
               aria-label="Bootstrap"
             >
@@ -125,14 +134,14 @@
           <div class="col-md-3 text-white">
             <h5>Links</h5>
             <ul class="list-unstyled">
-              <li class="mb-2"><a href="index.html">Inicio</a></li>
-              <li class="mb-2"><a href="nosotros.html">Nosotros</a></li>
-              <li class="mb-2"><a href="contactForm.html">Contacto</a></li>
-              <li class="mb-2"><a href="pruebaWizard.html">Cotizar</a></li>
+              <li class="mb-2"><a class="lista" href="index.html">Inicio</a></li>
+              <li class="mb-2"><a class="lista" href="nosotros.html">Nosotros</a></li>
+              <li class="mb-2"><a class="lista" href="contactForm.html">Contacto</a></li>
+              <li class="mb-2"><a class="lista" href="pruebaWizard.html">Cotizar</a></li>
             </ul>
           </div>
 
-          <div class="col-md-3 text-primary">
+          <div class="col-md-3">
             <h5 class="redes" id="redes">Comunidad</h5>
             <i class="lab la-facebook-f"></i>
             <i class="lab la-linkedin-in"></i>
@@ -141,5 +150,6 @@
         </div>
       </div>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>

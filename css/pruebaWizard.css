@@ -1,12 +1,9 @@
-body {
-    background-color: #489490;
-    color: #1e2222;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-  }
+
+  body {
+    background-color: #020118;
+    color: #ffffff;
+}
+  
   .wizard-content-left {
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.45);
@@ -27,6 +24,10 @@ body {
   .form-wizard {
     color: #1e2222;
     padding: 30px;
+  }
+
+  .form-wizard-header{
+    color:white;
   }
   .form-wizard .wizard-form-radio {
     display: inline-block;
@@ -88,18 +89,19 @@ body {
     text-align: center;
   }
   .form-wizard .form-wizard-next-btn, .form-wizard .form-wizard-previous-btn, .form-wizard .form-wizard-submit {
-    background-color: #073331;
-    color: #ffffff;
+    background-color:#75ff00;
+    color:#020118;
     display: inline-block;
     min-width: 100px;
     min-width: 120px;
     padding: 10px;
     text-align: center;
+    text-decoration: none !important;
   }
   .form-wizard .form-wizard-next-btn:hover, .form-wizard .form-wizard-next-btn:focus, .form-wizard .form-wizard-previous-btn:hover, .form-wizard .form-wizard-previous-btn:focus, .form-wizard .form-wizard-submit:hover, .form-wizard .form-wizard-submit:focus {
     color: #ffffff;
     opacity: 0.6;
-    text-decoration: none;
+    text-decoration: none !important;
   }
   .form-wizard .wizard-fieldset {
     display: none;
@@ -117,8 +119,19 @@ body {
     height: 2px;
     width: 100%;
   }
+  .form-wizard .wizard-email-error {
+    display: none;
+    color: white;
+    background-color: #d70b0b;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
   .form-wizard .form-wizard-previous-btn {
-    background-color: #073331;
+    background-color:#75ff00;
   }
   .form-wizard .form-control {
     font-weight: 300;
@@ -142,11 +155,12 @@ body {
     transition: 0.2s linear all;
   }
   .form-wizard .focus-input .wizard-form-text-label {
-    color: #073331;
+    color: #75ff00 !important;
     top: -18px;
     transition: 0.2s linear all;
     font-size: 12px;
   }
+
   .form-wizard .form-wizard-steps {
     margin: 30px 0;
   }
@@ -179,22 +193,26 @@ body {
     width: 40px;
     z-index: 1;
   }
+
+  span{
+    color:#020118;
+  }
   .form-wizard .form-wizard-steps li:last-child::after {
     width: 50%;
   }
   .form-wizard .form-wizard-steps li.active span, .form-wizard .form-wizard-steps li.activated span {
-    background-color: #073331;
-    color: #ffffff;
+    background-color:#75ff00;
+    color:#020118;
   }
   .form-wizard .form-wizard-steps li.active::after, .form-wizard .form-wizard-steps li.activated::after {
-    background-color: #073331;
+    background-color: #75ff00;
     left: 50%;
     width: 50%;
-    border-color: #073331;
+    border-color: white;
   }
   .form-wizard .form-wizard-steps li.activated::after {
     width: 100%;
-    border-color: #073331;
+    border-color:white;
   }
   .form-wizard .form-wizard-steps li:last-child::after {
     left: 0;
@@ -229,4 +247,8 @@ body {
   
  .exito {
   display: none;
+ }
+
+ .form-wizard-previous-btn, .form-wizard-next-btn, .form-wizard-submit {
+  text-decoration: none !important;
  }
