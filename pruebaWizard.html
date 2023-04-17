@@ -22,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src = "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js" ></script> 
     <script src="script/pruebaWizard.js"></script>
-    <script src="/script/resumenWizard.js"></script>
+    
     
     
     <link rel="stylesheet" type="text/css" href="css\index.css" />
@@ -106,7 +106,7 @@
         <div class="row no-gutters justify-content-center align-items-center">
           
           <div class="col-lg-8 col-md-10">
-            <div class="form-wizard ">
+            <div class="form-wizard">
               <form action="" method="post" role="form">
                 <div class="form-wizard-header">
                   <p>
@@ -121,10 +121,10 @@
                 </div>
                 <fieldset class="wizard-fieldset show">
                   <h5 style="color: white !important;">Datos personales</h5>
-                  <div class="form-group" id="basic-form">
+                  <div class="form-group">
                     <input
                       type="text"
-                      class="form-control wizard-required"
+                      class="form-control wizard-required required"
                       id="fname"
                     />
                     <label for="fname" name="fname" class="wizard-form-text-label"
@@ -135,7 +135,7 @@
                   <div class="form-group">
                     <input
                       type="text"
-                      class="form-control wizard-required"
+                      class="form-control wizard-required required"
                       id="lname"
                     />
                     <label for="lname" class="wizard-form-text-label"
@@ -143,13 +143,13 @@
                     >
                     <div class="wizard-form-error"></div>
                   </div>
-                  <div class="form-group" id="basic-form">
+                  <div class="form-group">
                     <input
                       type="email"
-                      class="form-control wizard-required"
+                      class="form-control email wizard-required required"
                       id="email"
                       name="email"
-                      id="basic-form"
+                      
                     />
                     <label for="email" class="wizard-form-text-label"
                       >Email*</label
@@ -160,7 +160,7 @@
                   <div class="form-group">
                     <input
                       type="text"
-                      class="form-control wizard-required"
+                      class="form-control wizard-required required"
                       id="country"
                     />
                     <label for="country" class="wizard-form-text-label"
@@ -171,7 +171,7 @@
                   <div class="form-group">
                     <input
                       type="text"
-                      class="form-control wizard-required"
+                      class="form-control wizard-required required"
                       id="city"
                     />
                     <label for="city" class="wizard-form-text-label"
@@ -392,7 +392,7 @@
       </div>
     <script src="script/pruebaWizard.js"></script>
     <script src="script/script.js"></script>
-    <script src="/script/resumenWizard.js"></script>
+    <script src="script/validateWizard.js"></script>
     
   </body>
 </html>
